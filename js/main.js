@@ -23,3 +23,15 @@ console.log("block3_3: ", block3_3);
 const last = document.querySelectorAll(".props__item.props__item_two");
 
 block3_3.append(last[8], last[9]);
+
+const items = document.querySelectorAll(".item");
+console.log("items: ", items);
+
+const firstBlock = document.querySelector(".item.item_one");
+console.log("firstBlock: ", firstBlock);
+
+const fourBlock = document.querySelector(".item.item_four");
+firstBlock.after(fourBlock);
+
+const threeBlock = document.querySelector(".item.item_three");
+threeBlock.after(fourBlock);
