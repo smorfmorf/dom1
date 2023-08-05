@@ -27,3 +27,6 @@ firstBlock.after(fourBlock);
 
 const threeBlock = document.querySelector(".item.item_three");
 threeBlock.after(fourBlock);
+
+const ads = document.querySelector(".ads");
+ads.remove();
