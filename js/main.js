@@ -30,3 +30,24 @@ threeBlock.after(fourBlock);
 
 const ads = document.querySelector(".ads");
 ads.remove();
+
+const fiveBlock = document.querySelector(".item.item_five");
+const titleFive = fiveBlock.querySelector(".item__title");
+console.log("titleFive: ", titleFive);
+const imgFive = fiveBlock.querySelector(".item__image");
+console.log("imgFive: ", imgFive);
+
+const twoBlock = document.querySelector(".item.item_two");
+const titleTwo = twoBlock.querySelector(".item__title");
+console.log("titleTwo: ", titleTwo);
+
+titleTwo.after(titleFive);
+
+const sixBlock = document.querySelector(".item.item_six");
+const titleSix = sixBlock.querySelector(".item__title");
+console.log("titleSix: ", titleSix);
+titleSix.after(titleTwo);
+imgFive.after(titleSix);
+
+const titleThree = threeBlock.querySelector(".item__title");
+titleThree.textContent = "This и прототипы объектов";
